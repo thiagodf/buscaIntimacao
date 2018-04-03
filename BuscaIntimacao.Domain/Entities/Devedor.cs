@@ -12,6 +12,6 @@ namespace BuscaIntimacao.Domain.Entities
         }
 
         public string Nome { get; private set; }
-        public Documento Documento { get; set; }
+        public Documento Documento { get; private set; }
     }
 }

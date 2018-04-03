@@ -5,7 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="7.5.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BuscaIntimacao.Commons\BuscaIntimacao.Commons.csproj" />
     <ProjectReference Include="..\BuscaIntimacao.Domain.Core\BuscaIntimacao.Domain.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Validations\Devedor\" />
+    <Folder Include="Validations\Intimacao\" />
   </ItemGroup>
 
 </Project>

@@ -11,6 +11,6 @@ namespace BuscaIntimacao.Domain.ValueObjects
         }
 
         public ETipoDocumento Tipo { get; private set; }
-        public string Numero { get; set; }
+        public string Numero { get; private set; }
     }
 }

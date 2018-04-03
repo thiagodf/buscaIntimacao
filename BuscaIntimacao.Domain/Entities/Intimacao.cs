@@ -18,7 +18,7 @@ namespace BuscaIntimacao.Domain.Entities
         public string Codigo { get; private set; }
         public Cartorio Cartorio { get; private set; }
         public Devedor Devedor { get; private set; }
-        public bool Ativa { get; set; }
+        public bool Ativa { get; private set; }
 
         public void geraCodigo()
         {
