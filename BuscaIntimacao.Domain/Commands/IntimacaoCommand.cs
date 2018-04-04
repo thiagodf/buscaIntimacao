@@ -10,6 +10,7 @@ namespace BuscaIntimacao.Domain.Commands
         public string Codigo { get; set; }
         public CartorioCommand Cartorio { get; set; }
         public DevedorCommand Devedor { get; set; }
+        public DateTime Vencimento { get; set; }
         public bool Ativa { get; set; }
 
         public override bool IsValid()

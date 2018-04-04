@@ -8,16 +8,19 @@ namespace BuscaIntimacao.Domain.Entities
         public Intimacao(
             Cartorio cartorio, 
             Devedor devedor,
+            DateTime vencimento,
             bool ativa)
         {
             Cartorio = cartorio;
             Devedor = devedor;
+            Vencimento = vencimento;
             Ativa = ativa;
         }
 
         public string Codigo { get; private set; }
         public Cartorio Cartorio { get; private set; }
         public Devedor Devedor { get; private set; }
+        public DateTime Vencimento { get; private set; }
         public bool Ativa { get; private set; }
 
         public void geraCodigo()
